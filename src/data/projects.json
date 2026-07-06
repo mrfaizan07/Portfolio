@@ -1,15 +1,5 @@
 [
-  {
-    "id": "customer-segmentation",
-    "title": "Customer Segmentation Analysis",
-    "description": "Developed a machine learning solution using K-Means clustering to analyze customer purchasing behavior and automatically segment customers into meaningful groups. The insights help businesses improve targeted marketing strategies, customer retention, and personalized recommendations.",
-    "category": "ML",
-    "image": "/projects/Customer_Segmentation.png",
-    "tech": ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
-    "demo": "https://customer-segmentaion.onrender.com/",
-    
-    "featured": true
-  },
+ 
   {
     "id": "Campus_Quest",
     "title": "Campus Quest",
@@ -31,6 +21,50 @@
     "demo": "https://lovely-furniture.onrender.com/",
     "featured": true
   },
+
+
+  {
+  "id": "Pinglix",
+  "title": "Pinglix",
+  "description": "A developer-friendly uptime monitoring and HTTP ping automation platform designed to reduce cold starts for deployed applications. Simply add your Render, Vercel, or any public endpoint URL, and Pinglix automatically sends scheduled HTTP requests to help keep your services responsive. Features include secure authentication, project management, customizable ping intervals, real-time status tracking, and an intuitive dashboard.",
+  "category": "Dev Tool",
+  "image": "/projects/pinglix.png",
+  "tech": [
+    "React",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Tailwind CSS",
+    "JWT",
+    "bcryptjs",
+    "Cron Jobs",
+    "Axios"
+  ],
+  "demo": "https://pinglix.onrender.com/",
+  "featured": true
+},
+
+
+{
+  "id": "British_Academy",
+  "title": "British Academy",
+  "description": "A modern educational platform developed for a training institute to showcase professional courses such as ADCA, CCC, and other certification programs. Features a responsive design, course listings, admission information, and an intuitive interface to help students explore programs and enroll with ease.",
+  "category": "Client Project",
+  "image": "/projects/british.png",
+  "tech": [
+    "React",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Tailwind CSS"
+  ],
+  "demo": "https://britishacademys.in/",
+  "featured": true
+},
+
+
+
+
   {
     "id": "Nek Kam Foundation",
     "title": "Nek Kam Foundation",
@@ -82,6 +116,18 @@
     "image": "/projects/crop.png",
     "tech": [ "Python", "Machine Learning", "Firebase"],
     "demo":"https://crop-disease-detection.onrender.com/",
+    "featured": true
+  },
+
+   {
+    "id": "customer-segmentation",
+    "title": "Customer Segmentation Analysis",
+    "description": "Developed a machine learning solution using K-Means clustering to analyze customer purchasing behavior and automatically segment customers into meaningful groups. The insights help businesses improve targeted marketing strategies, customer retention, and personalized recommendations.",
+    "category": "ML",
+    "image": "/projects/Customer_Segmentation.png",
+    "tech": ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
+    "demo": "https://customer-segmentaion.onrender.com/",
+    
     "featured": true
   }
 ]
