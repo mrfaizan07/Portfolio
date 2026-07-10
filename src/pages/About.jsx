@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Helmet } from 'react-helmet-async'
+import SEO from '../components/SEO'
 
 const TimelineItem = ({ year, title, subtitle, desc, delay }) => (
   <motion.div 
@@ -19,11 +19,15 @@ const TimelineItem = ({ year, title, subtitle, desc, delay }) => (
 
 const About = () => {
   return (
+    <>
+      <SEO
+        title="About Mohd Faizan | Integral University Software Developer"
+        description="Learn about Mohd Faizan, a software developer, full stack developer and AI/ML enthusiast connected with Integral University, serving Lucknow, Sitapur and Biswan with React, Python and MERN stack skills."
+        keywords="About Mohd Faizan, Mohd Faizan developer, MohdFaizan07, Faizan07, mrfaizan07, Integral University developer, Integral University software developer, Sitapur software developer, Biswan software developer, Full Stack Developer Lucknow, AI ML Developer India, React Developer, Python Developer"
+        path="/about"
+      />
+
     <div className="container mx-auto px-6 py-24 max-w-5xl">
-      <Helmet>
-        <title>About | Mohd Faizan</title>
-        <meta name="description" content="Learn more about Mohd Faizan, a software engineer and BCA student at Integral University." />
-      </Helmet>
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -57,10 +61,10 @@ const About = () => {
           <div className="glass-card p-8 rounded-3xl relative overflow-hidden group">
             <div className="absolute top-0 right-0 w-32 h-32 bg-brand-primary/10 rounded-bl-full transition-transform duration-500 group-hover:scale-110" />
           <p className="text-lg text-text-muted leading-relaxed mb-4">
-            Hi, I'm <strong className="text-white">Mohd Faizan</strong> — a Full Stack Developer and Machine Learning enthusiast currently pursuing my Master of Computer Applications (MCA) at Integral University.
+            Hi, I'm <strong className="text-white">Mohd Faizan</strong> — a Software Developer, Full Stack Developer, and Machine Learning enthusiast currently pursuing my Master of Computer Applications (MCA) at Integral University.
           </p>
           <p className="text-lg text-text-muted leading-relaxed">
-            I transform raw data into actionable insights and build responsive, intelligent web applications. My goal is to create scalable software solutions that merge modern web technologies with artificial intelligence, empowering businesses and users alike.
+            I build responsive, intelligent web applications for users and businesses across Lucknow, Sitapur, and Biswan. My goal is to create scalable software solutions that merge modern web technologies with artificial intelligence.
           </p>
           </div>
         </div>
@@ -124,6 +128,7 @@ const About = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

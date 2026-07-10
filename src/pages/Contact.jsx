@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Helmet } from 'react-helmet-async'
 import { useForm } from 'react-hook-form'
 import { FaPaperPlane, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa'
+import SEO from '../components/SEO'
 
 const ContactInfo = ({ icon, title, content, link }) => (
   <div className="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/10">
@@ -67,12 +67,35 @@ const Contact = () => {
     }
   }
 
+  const contactSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    name: 'Contact Mohd Faizan',
+    url: 'https://mohd-faizan-phpq.onrender.com/contact',
+    about: {
+      '@type': 'Person',
+      name: 'Mohd Faizan',
+      email: 'mailto:umohdfaizan@gmail.com',
+      telephone: '+918810743304',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Lucknow',
+        addressCountry: 'IN',
+      },
+    },
+  }
+
   return (
+    <>
+      <SEO
+        title="Contact Mohd Faizan | Hire Software Developer"
+        description="Contact Mohd Faizan for software development, MERN stack applications, React websites, AI/ML solutions, consulting, internships or collaboration opportunities in Lucknow, Sitapur and Biswan."
+        keywords="Contact Mohd Faizan, Hire Mohd Faizan, MohdFaizan07, Faizan07, mrfaizan07, Hire Software Developer, Hire Full Stack Developer, Integral University developer, Sitapur software developer, Biswan software developer, MERN Developer Lucknow, freelance React developer, AI consultant"
+        path="/contact"
+        schema={[contactSchema]}
+      />
+
     <div className="container mx-auto px-6 py-24 max-w-6xl">
-      <Helmet>
-        <title>Contact | Mohd Faizan</title>
-        <meta name="description" content="Get in touch with Mohd Faizan for freelance projects, AI consulting, or full-time opportunities." />
-      </Helmet>
 
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 font-heading text-white">
@@ -194,6 +217,7 @@ const Contact = () => {
         </motion.div>
       </div>
     </div>
+    </>
   )
 }
 

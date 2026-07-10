@@ -1,14 +1,39 @@
 import { motion } from 'framer-motion'
-import { Helmet } from 'react-helmet-async'
+import SEO from '../components/SEO'
 import certificatesData from '../data/certificates.json'
 
 const Certificates = () => {
+  const certificatesSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Mohd Faizan Certifications',
+    itemListElement: certificatesData.map((cert, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@type': 'EducationalOccupationalCredential',
+        name: cert.title,
+        credentialCategory: 'Certificate',
+        recognizedBy: {
+          '@type': 'Organization',
+          name: cert.issuer,
+        },
+        dateCreated: cert.date,
+      },
+    })),
+  }
+
   return (
+    <>
+      <SEO
+        title="Certificates | Mohd Faizan Software Developer Certifications"
+        description="View Mohd Faizan's professional certificates in data science, Python, software engineering, frontend development and technology training."
+        keywords="Mohd Faizan certificates, Mohd Faizan developer certificates, software developer certification, Data Science certificate, Python certificate, IBM certificate, Oracle certificate, Software Engineering certificate, Frontend Developer certification"
+        path="/certificates"
+        schema={[certificatesSchema]}
+      />
+
     <div className="container mx-auto px-6 py-24 max-w-7xl">
-      <Helmet>
-        <title>Certificates | Mohd Faizan</title>
-        <meta name="description" content="Professional certifications achieved by Mohd Faizan in Data Science and Software Engineering." />
-      </Helmet>
 
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 font-heading text-white">
@@ -56,6 +81,7 @@ const Certificates = () => {
         ))}
       </div>
     </div>
+    </>
   )
 }
 

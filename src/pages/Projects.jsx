@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Helmet } from 'react-helmet-async'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
+import SEO from '../components/SEO'
 import projectsData from '../data/projects.json'
 
 const Projects = () => {
@@ -18,12 +18,39 @@ const Projects = () => {
         return cat.includes(filter)
       })
 
+  const projectsSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Mohd Faizan Portfolio Projects',
+    itemListElement: projectsData.map((project, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@type': 'CreativeWork',
+        name: project.title,
+        description: project.description,
+        image: `https://mohd-faizan-phpq.onrender.com${project.image}`,
+        url: project.demo || project.github || 'https://mohd-faizan-phpq.onrender.com/projects',
+        creator: {
+          '@type': 'Person',
+          name: 'Mohd Faizan',
+        },
+        keywords: project.tech.join(', '),
+      },
+    })),
+  }
+
   return (
+    <>
+      <SEO
+        title="Projects | Mohd Faizan Portfolio and Software Developer Work"
+        description="Explore Mohd Faizan's portfolio projects, including MERN stack apps, React websites, AI tools, machine learning systems, e-commerce platforms, uptime monitoring tools and client websites."
+        keywords="Mohd Faizan projects, Mohd Faizan portfolio projects, Mohd Faizan developer, MohdFaizan07 projects, Faizan07 portfolio, mrfaizan07 GitHub, software developer projects, Integral University developer projects, Sitapur software developer portfolio, Biswan software developer portfolio, MERN stack projects, React projects, AI projects, Machine Learning projects, Pinglix, Campus Quest"
+        path="/projects"
+        schema={[projectsSchema]}
+      />
+
     <div className="container mx-auto px-6 py-24 max-w-7xl">
-      <Helmet>
-        <title>Projects | Mohd Faizan</title>
-        <meta name="description" content="Explore the portfolio projects of Mohd Faizan including Full Stack Apps, Machine Learning models, and AI systems." />
-      </Helmet>
 
       <div className="flex flex-col items-center mb-16 text-center">
         <motion.h1 
@@ -150,6 +177,7 @@ const Projects = () => {
         </AnimatePresence>
       </motion.div>
     </div>
+    </>
   )
 }
 

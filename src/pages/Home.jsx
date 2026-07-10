@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaEnvelope, FaDownload, FaArrowRight } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaEnvelope, FaArrowRight } from 'react-icons/fa'
 import SEO from '../components/SEO'
 import projectsData from '../data/projects.json'
-import skillsData from '../data/skills.json'
 
 const TypewriterText = ({ text }) => {
   return (
@@ -30,6 +29,35 @@ const TypewriterText = ({ text }) => {
 const Home = () => {
   const [visitors, setVisitors] = useState(1342) // Simulated visitor counter
 
+  const profilePageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfilePage',
+    name: 'Mohd Faizan Portfolio',
+    url: 'https://mohd-faizan-phpq.onrender.com',
+    mainEntity: {
+      '@type': 'Person',
+      name: 'Mohd Faizan',
+      alternateName: [
+        'Mohd Faizan Developer',
+        'Mohd Faizan Portfolio',
+        'MohdFaizan07',
+        'Faizan07',
+        'mrfaizan07',
+        'Integral University Developer',
+        'Sitapur Software Developer',
+        'Biswan Software Developer',
+      ],
+      jobTitle: 'Full Stack Developer and AI/ML Developer',
+      description:
+        'Full Stack Developer and Machine Learning enthusiast building React, MERN stack, Python, and AI-powered web applications from Lucknow, Sitapur, and Biswan, Uttar Pradesh, India.',
+      image: 'https://mohd-faizan-phpq.onrender.com/profile.jpg',
+      sameAs: [
+        'https://github.com/mrfaizan07',
+        'https://www.linkedin.com/in/mohd-faizan-05a435309/',
+      ],
+    },
+  }
+
   useEffect(() => {
     // Simulate real-time visitors incrementing slowly
     const interval = setInterval(() => {
@@ -43,10 +71,11 @@ const Home = () => {
   return (
     <>
       <SEO 
-        title="Mohd Faizan | AI Engineer & Full Stack Developer"
-        description="Portfolio of Mohd Faizan, an AI Engineer, MERN Stack Developer, and Founder based in Lucknow. Specializing in Python, React, and Machine Learning."
-        keywords="Faizan Developer, Mohd Faizan, Mohammad Faizan, Software Engineer Faizan, AI Engineer Faizan, React Developer Faizan, MERN Stack Developer, Python Developer,Bytesoft CEO ,CEO Bytesoft,Biswan Software Developer or engineer LLM Developer, AI Developer India, Prompt Engineer, RAG Developer, FastAPI Developer, Agentic AI Developer, OpenAI Developer, Integral University Software Engineer, Lucknow AI Developer"
+        title="Mohd Faizan Portfolio | Software Developer, Full Stack Developer and AI/ML Engineer"
+        description="Official portfolio of Mohd Faizan, a software developer and full stack developer connected with Integral University. Explore MERN, React, Python, AI/ML projects from Lucknow, Sitapur and Biswan."
+        keywords="Mohd Faizan, Mohd Faizan Portfolio, Mohd Faizan Developer, MohdFaizan07, Faizan07, mrfaizan07, Mohd Faizan Software Developer, software developer, Integral University developer, Integral University software developer, Sitapur software developer, Biswan software developer, Full Stack Developer, React Developer, MERN Stack Developer, AI ML Developer"
         path="/"
+        schema={[profilePageSchema]}
       />
 
       <div className="relative flex flex-col items-center overflow-hidden">
@@ -105,7 +134,7 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 1.5 }}
               className="text-lg text-text-muted max-w-2xl mx-auto leading-relaxed"
             >
-               Full Stack Developer, and Machine Learning enthusiast crafting modern digital experiences from Lucknow, India.
+               Software Developer, Full Stack Developer, and Machine Learning enthusiast connected with Integral University, crafting modern digital experiences across Lucknow, Sitapur, and Biswan.
             </motion.p>
 
             <motion.div 
@@ -131,7 +160,7 @@ const Home = () => {
               transition={{ duration: 1, delay: 2 }}
               className="flex justify-center gap-6 mt-12 text-2xl text-text-muted"
             >
-              <a href="https://github.com/mrfaizan123" target="_blank" rel="noreferrer" className="hover:text-brand-primary transition-colors hover:-translate-y-1 transform"><FaGithub /></a>
+              <a href="https://github.com/mrfaizan07" target="_blank" rel="noreferrer" className="hover:text-brand-primary transition-colors hover:-translate-y-1 transform"><FaGithub /></a>
               <a href="https://www.linkedin.com/in/mohd-faizan-05a435309/" className="hover:text-brand-secondary transition-colors hover:-translate-y-1 transform"><FaLinkedin /></a>
               <a href="mailto:umohdfaizan@gmail.com" className="hover:text-brand-accent transition-colors hover:-translate-y-1 transform"><FaEnvelope /></a>
             </motion.div>

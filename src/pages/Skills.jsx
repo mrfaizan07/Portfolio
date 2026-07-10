@@ -1,7 +1,6 @@
-import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Helmet } from 'react-helmet-async'
 import skillsData from '../data/skills.json'
+import SEO from '../components/SEO'
 import * as FaIcons from 'react-icons/fa'
 import * as SiIcons from 'react-icons/si'
 import * as TbIcons from 'react-icons/tb'
@@ -44,11 +43,15 @@ const SkillBar = ({ name, level, icon, delay }) => (
 
 const Skills = () => {
   return (
+    <>
+      <SEO
+        title="Skills | Mohd Faizan Software Developer Skills"
+        description="See Mohd Faizan's software developer skills in React, Node.js, MongoDB, Python, machine learning, AI, data science, frontend development, backend development and full stack engineering."
+        keywords="Mohd Faizan skills, Mohd Faizan developer skills, MohdFaizan07, Faizan07, mrfaizan07, software developer skills, Integral University developer skills, Sitapur software developer skills, Biswan software developer skills, React Developer, MERN Stack Developer, Python Developer, Machine Learning, AI Developer, Data Science, Full Stack Engineer"
+        path="/skills"
+      />
+
     <div className="container mx-auto px-6 py-24 max-w-6xl">
-      <Helmet>
-        <title>Skills | Mohd Faizan</title>
-        <meta name="description" content="Technical skills and proficiencies of Mohd Faizan in AI, Machine Learning, and Web Development." />
-      </Helmet>
 
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 font-heading">
@@ -80,6 +83,7 @@ const Skills = () => {
         ))}
       </div>
     </div>
+    </>
   )
 }
 
