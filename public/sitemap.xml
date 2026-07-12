@@ -1,33 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+>
+  
+  <!-- ======================================== -->
+  <!-- 1. HOME PAGE (Highest Priority) -->
+  <!-- ======================================== -->
   <url>
     <loc>https://mohd-faizan-phpq.onrender.com/</loc>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    
+    <!-- Hreflang for International SEO -->
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://mohd-faizan-phpq.onrender.com/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohd-faizan-phpq.onrender.com/" />
+    
+    <!-- Image Sitemap (Profile Image) -->
+    <image:image>
+      <image:loc>https://mohd-faizan-phpq.onrender.com/profile.jpg</image:loc>
+      <image:caption>Mohd Faizan - Software Developer Portfolio Profile</image:caption>
+      <image:title>Mohd Faizan Profile Image</image:title>
+      <image:geo_location>Lucknow, Uttar Pradesh, India</image:geo_location>
+      <image:license>https://mohd-faizan-phpq.onrender.com</image:license>
+    </image:image>
   </url>
+
+  <!-- ======================================== -->
+  <!-- 2. ABOUT PAGE -->
+  <!-- ======================================== -->
   <url>
     <loc>https://mohd-faizan-phpq.onrender.com/about</loc>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+    
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://mohd-faizan-phpq.onrender.com/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohd-faizan-phpq.onrender.com/about" />
+    
+    <!-- Image Sitemap -->
+    <image:image>
+      <image:loc>https://mohd-faizan-phpq.onrender.com/profile.jpg</image:loc>
+      <image:caption>Mohd Faizan - About Me</image:caption>
+      <image:title>Mohd Faizan About Page</image:title>
+    </image:image>
   </url>
+
+  <!-- ======================================== -->
+  <!-- 3. SKILLS PAGE -->
+  <!-- ======================================== -->
   <url>
     <loc>https://mohd-faizan-phpq.onrender.com/skills</loc>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://mohd-faizan-phpq.onrender.com/skills" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohd-faizan-phpq.onrender.com/skills" />
   </url>
+
+  <!-- ======================================== -->
+  <!-- 4. PROJECTS PAGE (High Priority) -->
+  <!-- ======================================== -->
   <url>
     <loc>https://mohd-faizan-phpq.onrender.com/projects</loc>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://mohd-faizan-phpq.onrender.com/projects" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohd-faizan-phpq.onrender.com/projects" />
+    
+    <!-- Project Thumbnail Images -->
+    <image:image>
+      <image:loc>https://mohd-faizan-phpq.onrender.com/project1.jpg</image:loc>
+      <image:caption>MERN Stack E-Commerce Project</image:caption>
+      <image:title>E-Commerce Project</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mohd-faizan-phpq.onrender.com/project2.jpg</image:loc>
+      <image:caption>AI/ML Project - Face Recognition</image:caption>
+      <image:title>Face Recognition Project</image:title>
+    </image:image>
   </url>
+
+  <!-- ======================================== -->
+  <!-- 5. CERTIFICATES PAGE -->
+  <!-- ======================================== -->
   <url>
     <loc>https://mohd-faizan-phpq.onrender.com/certificates</loc>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://mohd-faizan-phpq.onrender.com/certificates" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohd-faizan-phpq.onrender.com/certificates" />
   </url>
+
+  <!-- ======================================== -->
+  <!-- 6. CONTACT PAGE -->
+  <!-- ======================================== -->
   <url>
     <loc>https://mohd-faizan-phpq.onrender.com/contact</loc>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://mohd-faizan-phpq.onrender.com/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohd-faizan-phpq.onrender.com/contact" />
   </url>
+
+  <!-- ======================================== -->
+  <!-- 7. BLOG PAGES (If you have blog) -->
+  <!-- ======================================== -->
+  <!-- 
+  <url>
+    <loc>https://mohd-faizan-phpq.onrender.com/blog/how-to-build-portfolio</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://mohd-faizan-phpq.onrender.com/blog/how-to-build-portfolio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohd-faizan-phpq.onrender.com/blog/how-to-build-portfolio" />
+    
+    <image:image>
+      <image:loc>https://mohd-faizan-phpq.onrender.com/blog/portfolio-guide.jpg</image:loc>
+      <image:caption>How to Build a Stunning Portfolio</image:caption>
+    </image:image>
+  </url>
+  -->
+
+  <!-- ======================================== -->
+  <!-- 8. PROJECT DETAIL PAGES (Dynamic) -->
+  <!-- ======================================== -->
+  <!-- 
+  <url>
+    <loc>https://mohd-faizan-phpq.onrender.com/project/ecommerce</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://mohd-faizan-phpq.onrender.com/project/ecommerce" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohd-faizan-phpq.onrender.com/project/ecommerce" />
+    
+    <image:image>
+      <image:loc>https://mohd-faizan-phpq.onrender.com/project/ecommerce.jpg</image:loc>
+      <image:caption>Full Stack E-Commerce with MERN</image:caption>
+    </image:image>
+  </url>
+  -->
+
 </urlset>
