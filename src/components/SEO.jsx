@@ -35,6 +35,8 @@ const SEO = ({
   articleAuthor,
   articleSection,
   tags = [],
+  isArticle = false, // Added default value
+  isBlogPost = false, // Added default value
 }) => {
   const pagePath = normalizePath(path)
   const canonicalUrl = `${SITE.url}${pagePath === '/' ? '' : pagePath}`
@@ -276,12 +278,7 @@ const SEO = ({
       : null
 
   // ============================================================
-  // 6. FAQ SCHEMA (If FAQ data is passed)
-  // ============================================================
-  // You can pass FAQ data via schema prop or create a separate component
-
-  // ============================================================
-  // 7. PROFILE PAGE SCHEMA (For Google Knowledge Panel)
+  // 6. PROFILE PAGE SCHEMA (For Google Knowledge Panel)
   // ============================================================
   const profilePageSchema = {
     '@context': 'https://schema.org',
