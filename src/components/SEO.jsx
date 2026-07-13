@@ -11,9 +11,9 @@ const SITE = {
   phone: '+918810743304',
   location: 'Lucknow, Sitapur, Biswan, Uttar Pradesh, India',
   defaultDescription:
-    'Official portfolio of Mohd Faizan, a software developer and full stack developer connected with Integral University. Explore MERN, React, Python and AI/ML projects from Lucknow, Sitapur and Biswan.',
+    'Mohd Faizan is a software developer and full stack developer connected with Integral University. Explore MERN, React, Python and AI/ML projects from Lucknow, Sitapur and Biswan.',
   defaultKeywords:
-    'Mohd Faizan, Mohd Faizan Portfolio, faizan portfolio,faizan061,faizan061 developer, faizan developer, Mohd Faizan Developer, MohdFaizan061, Faizan061, mrfaizan061 portfolio, Mohd Faizan Software Developer, software developer, Integral University developer, Integral University software developer, Sitapur software developer, Biswan software developer, Full Stack Developer, React Developer, MERN Stack Developer, AI ML Developer',
+    'Mohd Faizan,Mohd Faizan Integral University,Faizan Integral University, Mohd Faizan Portfolio, faizan portfolio,faizan061,faizan061 developer, faizan developer, Mohd Faizan Developer, MohdFaizan061, Faizan061, mrfaizan061 portfolio, Mohd Faizan Software Developer, software developer, Integral University developer, Integral University software developer, Sitapur software developer, Biswan software developer, Full Stack Developer, React Developer, MERN Stack Developer, AI ML Developer',
 }
 
 const normalizePath = (path) => {
@@ -54,6 +54,8 @@ const SEO = ({
       'Faizan Developer',
       'Faizan061 portfolio',
       'Mohd faizan061 portfolio',
+      'Mohd Faizan Integral University',
+      'Faizan Integral University',
       'Mohd Faizan Developer',
       'Mohd Faizan Software Developer',
       'MohdFaizan061',
