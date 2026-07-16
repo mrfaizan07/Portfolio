@@ -23,7 +23,7 @@ const About = () => {
       <SEO
         title="About Mohd Faizan | Integral University Software Developer"
         description="Learn about Mohd Faizan, a software developer, full stack developer and AI/ML enthusiast connected with Integral University, serving Lucknow, Sitapur and Biswan with React, Python and MERN stack skills."
-        keywords="About Mohd Faizan, Mohd Faizan developer, MohdFaizan07, Faizan07, mrfaizan07, Integral University developer, Integral University software developer, Sitapur software developer, Biswan software developer, Full Stack Developer Lucknow, AI ML Developer India, React Developer, Python Developer"
+        keywords="About Mohd Faizan, Mohd Faizan developer, MohdFaizan07, faizan061, mrfaizan123, mohd faizan dev, Faizan07, mrfaizan07, Integral University developer, Integral University software developer, Sitapur software developer, Biswan software developer, Full Stack Developer Lucknow, AI ML Developer India, React Developer, Python Developer"
         path="/about"
       />
 

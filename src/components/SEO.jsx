@@ -12,7 +12,7 @@ const SITE = {
   defaultDescription:
     'Mohd Faizan is a Full Stack Developer and AI/ML developer from Uttar Pradesh, India, connected with Integral University and building React, MERN stack, Python, and machine learning projects.',
   defaultKeywords:
-    'Mohd Faizan, Mohd Faizan Portfolio, Mohd Faizan Developer, MohdFaizan07, Faizan07, Software Developer Mohd Faizan, Integral University Developer, Integral University Software Developer, Sitapur Software Developer, Biswan Software Developer, Full Stack Developer, MERN Stack Developer, React Developer, Python Developer, AI ML Developer, ByteSoft',
+    'Mohd Faizan, Mohd Faizan Portfolio, Mohd Faizan Developer, MohdFaizan07, Faizan07, mrfaizan07, faizan061, mrfaizan123, mohd faizan dev, Software Developer Mohd Faizan, Integral University Developer, Integral University Software Developer, Sitapur Software Developer, Biswan Software Developer, Full Stack Developer, MERN Stack Developer, React Developer, Python Developer, AI ML Developer, ByteSoft',
 }
 
 const normalizePath = (path) => {
@@ -42,6 +42,9 @@ const SEO = ({
       'Mohd Faizan Developer',
       'Mohd Faizan Portfolio',
       'MohdFaizan07',
+      'faizan061',
+      'mrfaizan123',
+      'mohd faizan dev',
       'Faizan07',
       'mrfaizan07',
       'Faizan Software Developer',

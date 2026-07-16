@@ -41,6 +41,9 @@ const Home = () => {
         'Mohd Faizan Developer',
         'Mohd Faizan Portfolio',
         'MohdFaizan07',
+        'faizan061',
+        'mrfaizan123',
+        'mohd faizan dev',
         'Faizan07',
         'mrfaizan07',
         'Integral University Developer',
@@ -73,7 +76,7 @@ const Home = () => {
       <SEO 
         title="Mohd Faizan Portfolio | Software Developer, Full Stack Developer and AI/ML Engineer"
         description="Official portfolio of Mohd Faizan, a software developer and full stack developer connected with Integral University. Explore MERN, React, Python, AI/ML projects from Lucknow, Sitapur and Biswan."
-        keywords="Mohd Faizan, Mohd Faizan Portfolio, Mohd Faizan Developer, MohdFaizan07, Faizan07, mrfaizan07, Mohd Faizan Software Developer, software developer, Integral University developer, Integral University software developer, Sitapur software developer, Biswan software developer, Full Stack Developer, React Developer, MERN Stack Developer, AI ML Developer"
+        keywords="Mohd Faizan, Mohd Faizan Portfolio, Mohd Faizan Developer, MohdFaizan07, Faizan07, mrfaizan07, faizan061, mrfaizan123, mohd faizan dev, Mohd Faizan Software Developer, software developer, Integral University developer, Integral University software developer, Sitapur software developer, Biswan software developer, Full Stack Developer, React Developer, MERN Stack Developer, AI ML Developer"
         path="/"
         schema={[profilePageSchema]}
       />

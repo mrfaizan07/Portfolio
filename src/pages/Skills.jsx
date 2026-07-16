@@ -47,7 +47,7 @@ const Skills = () => {
       <SEO
         title="Skills | Mohd Faizan Software Developer Skills"
         description="See Mohd Faizan's software developer skills in React, Node.js, MongoDB, Python, machine learning, AI, data science, frontend development, backend development and full stack engineering."
-        keywords="Mohd Faizan skills, Mohd Faizan developer skills, MohdFaizan07, Faizan07, mrfaizan07, software developer skills, Integral University developer skills, Sitapur software developer skills, Biswan software developer skills, React Developer, MERN Stack Developer, Python Developer, Machine Learning, AI Developer, Data Science, Full Stack Engineer"
+        keywords="Mohd Faizan skills, Mohd Faizan developer skills, MohdFaizan07, faizan061, mrfaizan123, mohd faizan dev, Faizan07, mrfaizan07, software developer skills, Integral University developer skills, Sitapur software developer skills, Biswan software developer skills, React Developer, MERN Stack Developer, Python Developer, Machine Learning, AI Developer, Data Science, Full Stack Engineer"
         path="/skills"
       />
 

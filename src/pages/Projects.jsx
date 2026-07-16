@@ -45,7 +45,7 @@ const Projects = () => {
       <SEO
         title="Projects | Mohd Faizan Portfolio and Software Developer Work"
         description="Explore Mohd Faizan's portfolio projects, including MERN stack apps, React websites, AI tools, machine learning systems, e-commerce platforms, uptime monitoring tools and client websites."
-        keywords="Mohd Faizan projects, Mohd Faizan portfolio projects, Mohd Faizan developer, MohdFaizan07 projects, Faizan07 portfolio, mrfaizan07 GitHub, software developer projects, Integral University developer projects, Sitapur software developer portfolio, Biswan software developer portfolio, MERN stack projects, React projects, AI projects, Machine Learning projects, Pinglix, Campus Quest"
+        keywords="Mohd Faizan projects, Mohd Faizan portfolio projects, Mohd Faizan developer, MohdFaizan07 projects, faizan061, mrfaizan123, mohd faizan dev, Faizan07 portfolio, mrfaizan07 GitHub, software developer projects, Integral University developer projects, Sitapur software developer portfolio, Biswan software developer portfolio, MERN stack projects, React projects, AI projects, Machine Learning projects, Pinglix, Campus Quest"
         path="/projects"
         schema={[projectsSchema]}
       />

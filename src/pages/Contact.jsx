@@ -90,7 +90,7 @@ const Contact = () => {
       <SEO
         title="Contact Mohd Faizan | Hire Software Developer"
         description="Contact Mohd Faizan for software development, MERN stack applications, React websites, AI/ML solutions, consulting, internships or collaboration opportunities in Lucknow, Sitapur and Biswan."
-        keywords="Contact Mohd Faizan, Hire Mohd Faizan, MohdFaizan07, Faizan07, mrfaizan07, Hire Software Developer, Hire Full Stack Developer, Integral University developer, Sitapur software developer, Biswan software developer, MERN Developer Lucknow, freelance React developer, AI consultant"
+        keywords="Contact Mohd Faizan, Hire Mohd Faizan, MohdFaizan07, faizan061, mrfaizan123, mohd faizan dev, Faizan07, mrfaizan07, Hire Software Developer, Hire Full Stack Developer, Integral University developer, Sitapur software developer, Biswan software developer, MERN Developer Lucknow, freelance React developer, AI consultant"
         path="/contact"
         schema={[contactSchema]}
       />
